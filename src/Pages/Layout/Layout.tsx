@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom'
-import { CustomLink } from '../Components/CustomLink';
+import { Header } from '../Components/Header';
 
 import styles from './Layout.module.scss'
 
@@ -9,12 +9,7 @@ interface ILayoutProps {}
 export const Layout = () => {
   return (
     <>
-      <header>
-        <CustomLink to='/'>Home</CustomLink>
-        <CustomLink to='/system'>System</CustomLink>
-        <CustomLink to='/skills'>Skills</CustomLink>
-        <CustomLink to='/atlas'>Atlas</CustomLink>
-      </header>
+      <Header />
       <main>
         <Outlet />
       </main>

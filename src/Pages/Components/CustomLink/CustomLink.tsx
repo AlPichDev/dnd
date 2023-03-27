@@ -1,11 +1,12 @@
 import React, { ReactNode } from 'react';
-import { Link, PathPattern, useMatch } from 'react-router-dom'
+import { Link, useMatch } from 'react-router-dom'
 
 import styles from './CustomLink.module.scss'
 
 interface ICustomLinkProps {
   children?: ReactNode,
   to: string,
+  props?: any,
 }
 
 export const CustomLink = ({children, to, ...props}: ICustomLinkProps) => {
